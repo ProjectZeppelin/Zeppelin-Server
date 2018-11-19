@@ -17,10 +17,11 @@
             console.log("Connected");
             db.db.collection("time", function (err, collection) {
                 collection.find({}).toArray(function (err, data) {
-                    console.log(data[0].val); // it will print your collection data
-                    i = data[0].val;
                     if (cb) cb();
-                    app.setI(i);
+                    if (data[0]) {
+                        i = data[0].val;
+                        app.setI(i);
+                    }
                     app.handleGet(function () {
                         console.log("Received get");
                         console.log("Saving instance to database");
