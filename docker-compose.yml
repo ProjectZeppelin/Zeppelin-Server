@@ -1,0 +1,22 @@
+version: '3.0' 
+ 
+services:
+ angular: 
+  build: frontend
+  restart: always
+  ports:
+    - "4200:4200"
+ 
+ express: 
+  build: node
+  restart: always
+  ports:
+    - "3000:3000" 
+  links:
+    - db
+ db:
+    image: mongo:latest
+    ports:
+      - "27000:27017" # mongodb is already running on my local machine
+    volumes: 
+      - ./volume:/data/db

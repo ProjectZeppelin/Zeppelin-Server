@@ -1,0 +1,5 @@
+db.time.insert({val: 0});
+
+db.menu.find({})
+
+db.time.findOneAndReplace({}, {val: 10})
