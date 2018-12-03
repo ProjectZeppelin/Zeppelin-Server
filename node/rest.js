@@ -7,26 +7,23 @@
   const PORT = 3000;
   const HOST = '0.0.0.0';
 
-  let callback; // used to inform the database connection that a GET happend
   let menu;
+
+  let db;
 
   // App
   const app = express();
 
   app.get('/menu', (req, res) => {
-    if (menu) {
-      let val = menu;
-      console.log(val);
-      res.send(val);
-    } else {
-      console.log("No callback provided");
-      res.send("No callback provided \n");
-    }
+    db.sendCollection('menu', {}, res);
   });
 
   app.get('/language/:id', (req, res) => {
     console.log(req.params.id);
-    res.send(req.params.id);
+    db.sendCollection('languages', {
+      title: req.params.id
+    }, res);
+    //res.send(req.params.id);
   });
 
   // Parsers for POST data
@@ -53,5 +50,7 @@
   module.exports.setMenu = function (Menu) {
     menu = Menu;
   }
-
+  module.exports.setDB = function (DB) {
+    db = DB;
+  }
 }());
