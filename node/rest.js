@@ -10,15 +10,8 @@
   let callback; // used to inform the database connection that a GET happend
   let menu;
 
-  let i = 0;
-
   // App
   const app = express();
-  app.get('/count', (req, res) => {
-    i++;
-    if (callback) callback(); // update the dataase with the new index
-    res.send('You are user number ' + i + "\n");
-  });
 
   app.get('/menu', (req, res) => {
     if (menu) {
@@ -55,18 +48,6 @@
 
   module.exports.getSomeThings = function () {
     return app;
-  }
-
-  module.exports.setI = function (index) {
-    i = index;
-  }
-
-  module.exports.getI = function (index) {
-    return i;
-  }
-
-  module.exports.handleGet = function (cb) {
-    callback = cb;
   }
 
   module.exports.setMenu = function (Menu) {
