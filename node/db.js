@@ -15,51 +15,7 @@
     db.on('error', () => console.log("Error"));
     db.once('open', function () {
       console.log("Connected");
-      db.db.collection("time", function (err, collection) {
-        collection.find({}).toArray(function (err, data) {
-          if (cb) cb();
-          if (data[0]) {
-            i = data[0].val;
-            app.setI(i);
-          }
-          app.handleGet(function () {
-            console.log("Received get");
-            console.log("Saving instance to database");
-            saveNum(app.getI());
-          });
-          setCollectionDataREST("menu");
-
-        });
-      });
-    });
-  }
-
-  // create mongoose schema
-  const timeSchema = new mongoose.Schema({
-    val: Number
-  }, {
-    collection: 'time'
-  });
-
-  // create mongoose model
-  const Time = mongoose.model('time', timeSchema);
-
-  function saveNum(index) {
-    let obj = {
-      val: index
-    };
-    db.db.collection("time", function (err, collection) {
-      collection.findOneAndUpdate({}, obj, {
-        upsert: true
-      });
-    });
-  }
-
-  function saveObject(obj) {
-    db.db.collection("time", function (err, collection) {
-      collection.findOneAndUpdate({}, obj, {
-        upsert: true
-      });
+      setCollectionDataREST("menu");
     });
   }
 
@@ -97,10 +53,6 @@
     });
   }
 
-  module.exports.getModel = function () {
-    return Time;
-  }
-
   module.exports.getCollection = function () {
     return db;
   }
@@ -116,17 +68,4 @@
   module.exports.getCollectionData = function (col) {
     return getCollectionData(col);
   }
-
-
-  /*const AddedUser = new User({
-      name: "kekakik",
-      age: 8
-  });
-
-  AddedUser.save().then(function (err, user) {
-      if (err) return console.error(err);
-      console.log("User added");
-  });
-  */
-
 }());
