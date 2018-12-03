@@ -2,4 +2,12 @@ db.time.insert({val: 0});
 
 db.menu.find({})
 
+db.languages.find({})
+
 db.time.findOneAndReplace({}, {val: 10})
+
+db.menu.find({title: 'Language 1'})
+
+db.menu.deleteMany({})
+
+db.languages.deleteMany({})
