@@ -31,6 +31,11 @@
         }
     });
 
+    app.get('/language/:id', (req, res) => {
+        console.log(req.params.id);
+        res.send(req.params.id);
+    });
+
     // Parsers for POST data
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({
