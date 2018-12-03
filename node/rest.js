@@ -7,8 +7,6 @@
   const PORT = 3000;
   const HOST = '0.0.0.0';
 
-  let menu;
-
   let db;
 
   // App
@@ -51,9 +49,6 @@
     return app;
   }
 
-  module.exports.setMenu = function (Menu) {
-    menu = Menu;
-  }
   module.exports.setDB = function (DB) {
     db = DB;
   }
