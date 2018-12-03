@@ -15,8 +15,6 @@
     db.once('open', function () {
       console.log("Connected");
       if (cb) cb();
-      setCollectionDataREST("menu");
-
     });
   }
 
@@ -33,24 +31,6 @@
       collection.find({}).toArray(function (err, data) {
         console.log(data); // it will print your collection data
       });
-    });
-  }
-
-  function setCollectionDataREST(col) {
-    db.db.collection(col, function (err, collection) {
-      /*collection.find({}).toArray(function (err, data) {
-          return data;
-      });*/
-      return collection.find({}).toArray().then((x) => app.setMenu(x));
-    });
-  }
-
-  function getCollectionData(col) {
-    db.db.collection(col, function (err, collection) {
-      collection.find({}).toArray(function (err, data) {
-        return data;
-      });
-      //collection.find({}).toArray()
     });
   }
 

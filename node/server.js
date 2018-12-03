@@ -1,7 +1,7 @@
 const app = require('./rest');
 const mongoose = require('mongoose');
 const db = require('./db');
-const env = require('./environment');
+const env = require('./var/environment');
 
 
 // create mongoose schema
@@ -41,6 +41,7 @@ function saveDataFirstTime() {
   let menu1 = new Menu(env.data.java_menu);
   let menu2 = new Menu(env.data.javascript_menu);
   let menu3 = new Menu(env.data.csharp_menu);
+  console.log(env.data.java_menu);
   db.saveUnique('menu', menu1, {
     title: menu1.title
   });
