@@ -1,7 +1,7 @@
 (function () {
   let Data = {
     java_menu: {
-      title: "java",
+      title: "Java",
       url: "/language/java",
       children: [{
           title: "java",
@@ -16,7 +16,7 @@
       ]
     },
     javascript_menu: {
-      title: "javascript",
+      title: "Javascript",
       url: "/language/javascript",
       children: [{
         title: "javascript",
@@ -24,9 +24,17 @@
         children: []
       }]
     },
-
+    mysql_menu: {
+      title: "MySQL",
+      url: "/language/MYSQL",
+      children: [{
+        title: "MYSQL",
+        url: "/language/MYSQL",
+        children: []
+      }]
+    },
     csharp_menu: {
-      title: "CSharp",
+      title: "C#",
       url: "/languages/csharp",
       children: [{
           title: "basics",

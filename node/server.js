@@ -41,7 +41,8 @@ function saveDataFirstTime() {
   let menu1 = new Menu(env.data.java_menu);
   let menu2 = new Menu(env.data.javascript_menu);
   let menu3 = new Menu(env.data.csharp_menu);
-  console.log(env.data.java_menu);
+  let menu4 = new Menu(env.data.mysql_menu);
+
   db.saveUnique('menu', menu1, {
     title: menu1.title
   });
@@ -51,7 +52,11 @@ function saveDataFirstTime() {
 
   db.saveUnique('menu', menu3, {
     title: menu3.title
-  })
+  });
+
+  db.saveUnique('menu', menu4, {
+    title: menu4.title
+  });
 
   let csharp = new Language(env.data.csharp);
   db.saveUnique('languages', csharp, {
