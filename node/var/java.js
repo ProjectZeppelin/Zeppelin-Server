@@ -5,12 +5,12 @@
       data: [{
           title: "java basics",
           subtitle: "What is java",
-          gist: "www.github.com"
+          gist: "https://gist.github.com/F0xedb/fc3fb6c35e5f09e03c7ad6b08c1f229b"
         },
         {
           title: "java basics 2.0",
           subtitle: "how to read java",
-          gist: "www.github.com"
+          gist: "https://gist.github.com/F0xedb/5cf98c8c8ad37992f13cd0dcb3c02fed"
         },
 
       ]
@@ -19,7 +19,7 @@
       title: "java_advanced",
       data: [{
           title: "OOP",
-          subtitle: "Opject oriented code",
+          subtitle: "Object oriented code",
           gist: "www.github.com"
         },
         {
