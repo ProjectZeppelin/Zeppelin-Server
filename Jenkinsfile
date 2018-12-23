@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'curl localhost:3001/menu'
-		sh 'curl curl localhost:3001/language'
+		            sh 'curl curl localhost:3001/language'
             }
         }
         stage('Shutdown') { 
