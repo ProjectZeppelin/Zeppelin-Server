@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'server_express' 
+            args '-p 3001:3000' 
+        }
+    }
     stages {
         stage('setup') { 
             steps {
