@@ -13,8 +13,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'curl localhost:3002/menu'
-		            sh 'curl localhost:3002/language'
+                sh 'curl 192.168.1.122:3002/menu'
+		            sh 'curl 192.168.1.122:3002/language'
             }
         }
     }
