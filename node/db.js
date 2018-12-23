@@ -2,9 +2,9 @@
   const mongoose = require('mongoose');
 
   //const dbHost = 'mongodb://db:27017/test';
-  const dbHost = 'mongodb://192.168.1.122:27000/test';
+  const dbHost = 'mongodb://172.20.0.2:27017/test';
   var db = mongoose.connection;
-  let app
+  let app;
 
   function init(cb) {
     // Connect to mongodb
