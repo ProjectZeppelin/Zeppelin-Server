@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('setup') { 
             steps {
-		sh 'curl 172.20.0.2:27017'
-                sh 'sleep 5 # make the service wait for a database connection this is a bug in the docker version on macos'
+		sh 'sleep 5 # make the service wait for a database connection this is a bug in the docker version on macos'
             }
         }
         stage('Test') {
