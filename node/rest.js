@@ -16,6 +16,10 @@
     db.sendCollection('menu', {}, res);
   });
 
+  app.get('/clear/:id', (req, res) => {
+    db.removeMany(req.params.id);
+  });
+
   app.get('/language/:id', (req, res) => {
     console.log(req.params.id);
     db.sendCollection('languages', {

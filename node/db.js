@@ -27,6 +27,12 @@
     });
   }
 
+  function removeCollection(col) {
+    db.db.collection(col, function (err, collection) {
+      collection.deleteMany({});
+    });
+  }
+
   function printCollection(col) {
     db.db.collection(col, function (err, collection) {
       collection.find({}).toArray(function (err, data) {
@@ -113,6 +119,10 @@
 
   module.exports.saveUnique = function (col, obj, id) {
     saveUnique(col, obj, id);
+  }
+
+  module.exports.removeMany = function (col) {
+    removeMany(col);
   }
 
 
