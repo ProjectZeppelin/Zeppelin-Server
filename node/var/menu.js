@@ -34,34 +34,13 @@
       }]
     },
     csharp_menu: {
-      title: "C#",
-      url: "/languages/csharp",
+      title: "csharp",
+      url: "/language/csharp",
       children: [{
-          title: "basics",
-          url: "/languages/csharp",
-          children: []
-        },
-        {
-          title: "classes",
-          url: "/languages/csharp_classes",
-          children: []
-        },
-        {
-          title: "OOP",
-          url: "/languages/csharp_oop",
-          children: [{
-              title: "basics",
-              url: "/languages/csharp_oop_basic",
-              children: []
-            },
-            {
-              title: "polymorphism",
-              url: "/languages/csharp_polymorphism",
-              children: []
-            },
-          ]
-        },
-      ]
+        title: "csharp",
+        url: "/language/csharp",
+        children: []
+      }]
     }
   }
 
