@@ -18,6 +18,9 @@
 
   app.get('/clear/:id', (req, res) => {
     db.removeMany(req.params.id);
+    res.json({
+      deleted: req.params.id
+    });
   });
 
   app.get('/language/:id', (req, res) => {

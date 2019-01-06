@@ -1,8 +1,7 @@
 (function () {
   const mongoose = require('mongoose');
 
-  //const dbHost = 'mongodb://db:27017/test';
-  const dbHost = 'mongodb://172.20.0.2:27017/test';
+  const dbHost = 'mongodb://db:27017/test';
   var db = mongoose.connection;
   let app;
 
@@ -29,7 +28,7 @@
 
   function removeCollection(col) {
     db.db.collection(col, function (err, collection) {
-      collection.deleteMany({});
+      collection.remove({});
     });
   }
 
@@ -122,7 +121,7 @@
   }
 
   module.exports.removeMany = function (col) {
-    removeMany(col);
+    removeCollection(col);
   }
 
 
