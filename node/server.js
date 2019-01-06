@@ -63,21 +63,6 @@ function saveDataFirstTime() {
     title: csharp.title
   });
 
-  let csharp_classes = new Language(env.data.csharp_classes);
-  db.saveUnique('languages', csharp_classes, {
-    title: csharp.title
-  });
-
-  let csharp_oop_basic = new Language(env.data.csharp_oop_basic);
-  db.saveUnique('languages', csharp_oop_basic, {
-    title: csharp.title
-  });
-
-  let csharp_polymorphism = new Language(env.data.csharp_polymorphism);
-  db.saveUnique('languages', csharp_polymorphism, {
-    title: csharp.title
-  });
-
   let java = new Language(env.data.java);
   db.saveUnique('languages', java, {
     title: csharp.title
