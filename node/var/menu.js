@@ -18,7 +18,7 @@
         children: []
       }]
     },
-    mysql_menu: {
+    /*mysql_menu: {
       title: "MySQL",
       url: "/language/MYSQL",
       children: [{
@@ -26,7 +26,7 @@
         url: "/language/MYSQL",
         children: []
       }]
-    },
+    },*/
     csharp_menu: {
       title: "csharp",
       url: "/language/csharp",

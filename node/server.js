@@ -41,7 +41,7 @@ function saveDataFirstTime() {
   let menu1 = new Menu(env.data.java_menu);
   let menu2 = new Menu(env.data.javascript_menu);
   let menu3 = new Menu(env.data.csharp_menu);
-  let menu4 = new Menu(env.data.mysql_menu);
+  //let menu4 = new Menu(env.data.mysql_menu);
   let menu5 = new Menu(env.data.html_menu);
   let menu6 = new Menu(env.data.css_menu);
 
@@ -56,9 +56,9 @@ function saveDataFirstTime() {
     title: menu3.title
   });
 
-  db.saveUnique('menu', menu4, {
-    title: menu4.title
-  });
+  /* db.saveUnique('menu', menu4, {
+     title: menu4.title
+   });*/
 
   db.saveUnique('menu', menu5, {
     title: menu5.title
