@@ -4,6 +4,8 @@
   const java = require('./java');
   const javascript = require('./javascript');
   const csharp = require('./csharp');
+  const html = require('./html');
+  const css = require('./css');
 
   let Data = {
     timeout: 5000,
@@ -21,7 +23,9 @@
     ...menu.data,
     ...csharp.data,
     ...java.data,
-    ...javascript.data
+    ...javascript.data,
+    ...html.data,
+    ...css.data
   };
 
 
