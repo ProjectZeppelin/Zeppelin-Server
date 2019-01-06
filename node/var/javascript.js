@@ -51,7 +51,6 @@
           title: "Events",
           subtitle: "Use events to call JS functions in HTML.",
           gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/149c976f105ffaa4a8f29cb40b7ffb89/raw/cf6e2f2e3668166c510f73a5ef057fbb70aa8966/Events.js"
->>>>>>> 5ddcca0cef18a2aea64dea5f2de411b8fcea0c82
         },
         {
           title: "Logic Operators",
