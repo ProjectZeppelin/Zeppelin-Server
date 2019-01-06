@@ -3,33 +3,17 @@
     java: {
       title: "java",
       data: [{
-          title: "java basics",
-          subtitle: "What is java",
-          gist: "https://gist.github.com/F0xedb/fc3fb6c35e5f09e03c7ad6b08c1f229b"
+          title: "Entry point",
+          subtitle: "The location where a java program starts",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/7294d920d45a1622fc0c98976d3ade99/raw/009e4dcbc5136d89029863efd592acb68f436702/Entry%2520point.java"
         },
         {
-          title: "java basics 2.0",
-          subtitle: "how to read java",
-          gist: "https://gist.github.com/F0xedb/5cf98c8c8ad37992f13cd0dcb3c02fed"
+          title: "Variables",
+          subtitle: "java primitieve variabelen",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/3302a198e03d47c7981b4ff4234cea67/raw/38fd609a15cf2e884adb6db3ebff82e0f7d04286/Variables.java"
         },
-
       ]
-    },
-    java_advanced: {
-      title: "java_advanced",
-      data: [{
-          title: "OOP",
-          subtitle: "Object oriented code",
-          gist: "www.github.com"
-        },
-        {
-          title: "OOP extended",
-          subtitle: "Extra info",
-          gist: "www.github.com"
-        },
-
-      ]
-    },
+    }
   }
 
   module.exports.data = Data;

@@ -4,16 +4,10 @@
       title: "Java",
       url: "/language/java",
       children: [{
-          title: "java",
-          url: "/language/java",
-          children: []
-        },
-        {
-          title: "java advanced",
-          url: "/languages/java_advanced",
-          children: []
-        }
-      ]
+        title: "java",
+        url: "/language/java",
+        children: []
+      }]
     },
     javascript_menu: {
       title: "Javascript",

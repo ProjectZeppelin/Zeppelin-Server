@@ -68,11 +68,6 @@ function saveDataFirstTime() {
     title: csharp.title
   });
 
-  let java_advanced = new Language(env.data.java_advanced);
-  db.saveUnique('languages', java_advanced, {
-    title: csharp.title
-  });
-
   let javascript = new Language(env.data.javascript);
   db.saveUnique('languages', javascript, {
     title: csharp.title
