@@ -55,22 +55,22 @@
         {
           title: "Class",
           subtitle: "A class is a blueprint of an object",
-          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/5f26123a45ffae8d527c4a2d3f74643b/raw/b4862467abbb3aec98f091462d30ec08f724e401/Class.java"
+          gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/5f26123a45ffae8d527c4a2d3f74643b/raw/b4862467abbb3aec98f091462d30ec08f724e401/Class.java"
         },
         {
           title: "Inheritance",
           subtitle: "Extend the current functionality of a class by creating a subclass",
-          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/9ecbc8ff42127550ada10cf1c322d093/raw/9a09586039f2f24eae3d9ad9f736546a04939e08/inheritance.java"
+          gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/9ecbc8ff42127550ada10cf1c322d093/raw/9a09586039f2f24eae3d9ad9f736546a04939e08/inheritance.java"
         },
         {
           title: "Abstract class",
           subtitle: "An abstract class is a class that you cannot make an object of. In other words you need to instantiate a subclass.",
-          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/6c2f866d1ea9fa9601a317d4665af21f/raw/da9b94d9c8f64bf57e579f43f883c354fcfd4555/AbstractClass.java"
+          gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/6c2f866d1ea9fa9601a317d4665af21f/raw/da9b94d9c8f64bf57e579f43f883c354fcfd4555/AbstractClass.java"
         },
         {
           title: "Interface",
           subtitle: "A common set of methods that different type of classes can use",
-          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/e33ccf656e25698a17da89ac2bb0a7a7/raw/ca175a97c645d9bc4af85cba1c543df32aaea560/Interface.java"
+          gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/e33ccf656e25698a17da89ac2bb0a7a7/raw/ca175a97c645d9bc4af85cba1c543df32aaea560/Interface.java"
         },
       ]
     }
