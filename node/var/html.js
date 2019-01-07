@@ -26,12 +26,7 @@
           title: "Element Id",
           subtitle: "A unique id for an element",
           gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/a58298b101843ac2d43cf79d0a34b96c/raw/5009c1051f8f8bc9e4d192932b56943c0b7a64dc/Element%2520Id.html"
-        },
-        {
-          title: "Template",
-          subtitle: "Temp",
-          gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/"
-        },
+        }
       ]
     }
   }

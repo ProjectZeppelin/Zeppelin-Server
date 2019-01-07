@@ -26,7 +26,7 @@
   app.get('/language/:id', (req, res) => {
     console.log(req.params.id);
     db.sendCollection('languages', {
-      title: req.params.id
+      title: req.params.id.toLowerCase()
     }, res);
     //res.send(req.params.id);
   });
