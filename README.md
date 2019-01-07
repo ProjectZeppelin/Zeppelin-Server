@@ -149,7 +149,7 @@ pipeline {
 > Don't forget rebuild the docker image before launching the Jenkinsfile
 
 ```
-docker build server_express
+docker build -t server_express . # . is the location of the Dockerfile
 ```
 
 
