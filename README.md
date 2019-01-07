@@ -106,3 +106,51 @@ docker-compose up -d --build express
 > Note that when you have already made the language that the new changes won't take effect because they already exist in the database. You will either have to change the database or delete the entry.
 For more info visit https://docs.mongodb.com/?_ga=2.114533582.898599719.1546866433-417632608.1546866433
 
+## Jenkins
+
+> If you wish to integrate jenkins with this tool you can do so by making a new Jenkins pipeline project
+Fork this repo for your own development and add a github webhook for auto building.
+Our current Jenkinsfile only check for a working setup. It doesn't deploy anythin yet you will have to supply your own stage
+Something like this
+
+
+```
+pipeline {
+    agent {
+        docker {
+            image 'server_express' 
+            args '-p 3002:3000' 
+        }
+    }
+    stages {
+        stage('setup') { 
+            steps {
+                sh 'node server.js &> /dev/null &'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'curl 0.0.0.0:3000/menu' # curl would return a error if the response trows an error and thus break the build
+                sh 'curl 0.0.0.0:3000/language'
+            }
+        }
+        # deploy our backend if no error happend and our curl was succesfull
+        stage('deploy') { 
+            steps {
+                sh 'scp user@localhost/* user@server/deployPath'
+                sh 'rebuild_and_restart_server.sh'
+            }
+        }
+    }
+}
+
+```
+
+> Don't forget rebuild the docker image before launching the Jenkinsfile
+
+```
+docker build server_express
+```
+
+
+
