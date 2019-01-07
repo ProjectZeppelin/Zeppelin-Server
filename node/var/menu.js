@@ -9,6 +9,15 @@
         children: []
       }]
     },
+    cpp_menu: {
+      title: "cpp",
+      url: "/language/cpp",
+      children: [{
+        title: "cpp",
+        url: "/language/cpp",
+        children: []
+      }]
+    },
     javascript_menu: {
       title: "Javascript",
       url: "/language/javascript",

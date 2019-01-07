@@ -6,6 +6,7 @@
   const csharp = require('./csharp');
   const html = require('./html');
   const css = require('./css');
+  const cpp = require('./cpp');
 
   let Data = {
     timeout: 5000,
@@ -25,7 +26,8 @@
     ...java.data,
     ...javascript.data,
     ...html.data,
-    ...css.data
+    ...css.data,
+    ..cpp.data
   };
 
 
