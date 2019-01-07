@@ -1,7 +1,7 @@
 (function () {
   let Data = {
     css: {
-      title: "css",
+      title: "CSS",
       data: [{
           title: "Selectors",
           subtitle: "Use these selectors to target html elements",

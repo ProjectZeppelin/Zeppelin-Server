@@ -1,7 +1,7 @@
 (function () {
   let Data = {
     html: {
-      title: "html",
+      title: "HTML",
       data: [{
           title: "Template",
           subtitle: "Always use this template",
