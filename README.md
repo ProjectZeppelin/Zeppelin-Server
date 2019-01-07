@@ -7,7 +7,7 @@
 ![Required](https://img.shields.io/badge/Requires-DockerCompose-orange.svg)
 ![Server](https://img.shields.io/badge/Server-JS-green.svg)
 # Zeppelin Server
-Server code to server code snippets for the android app
+Backend with a rest API to supply language/menu information to the frontend 
 
 *Languages used:  JS, YAML*
 
