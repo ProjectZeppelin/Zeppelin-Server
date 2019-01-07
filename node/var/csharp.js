@@ -1,7 +1,7 @@
 (function () {
   let Data = {
     csharp: {
-      title: "Csharp",
+      title: "csharp",
       data: [{
           title: "Variables",
           subtitle: "C# primitieve variabelen",

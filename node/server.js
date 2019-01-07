@@ -87,40 +87,40 @@ function saveDataFirstTime() {
 
   let csharp = new Language(env.data.csharp);
   db.saveUnique('languages', csharp, {
-    title: csharp.title.toLowerCase()
+    title: csharp.title
   });
 
   let java = new Language(env.data.java);
   db.saveUnique('languages', java, {
-    title: java.title.toLowerCase()
+    title: java.title
   });
 
   let javascript = new Language(env.data.javascript);
   db.saveUnique('languages', javascript, {
-    title: javascript.title.toLowerCase()
+    title: javascript.title
   });
 
   let html = new Language(env.data.html);
   db.saveUnique('languages', html, {
-    title: html.title.toLowerCase()
+    title: html.title
   });
 
   let css = new Language(env.data.css);
   db.saveUnique('languages', css, {
-    title: css.title.toLowerCase()
+    title: css.title
   });
   let cpp = new Language(env.data.cpp);
   db.saveUnique('languages', cpp, {
-    title: cpp.title.toLowerCase()
+    title: cpp.title
   });
 
   let python = new Language(env.data.python);
   db.saveUnique('languages', python, {
-    title: python.title.toLowerCase()
+    title: python.title
   });
 
   let bash = new Language(env.data.bash);
   db.saveUnique('languages', bash, {
-    title: bash.title.toLowerCase()
+    title: bash.title
   });
 }

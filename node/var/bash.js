@@ -1,9 +1,8 @@
 (function () {
   let Data = {
     bash: {
-      title: "Bash",
-      data: [
-        {
+      title: "bash",
+      data: [{
           title: "Bin/bash",
           subtitle: "Basic script",
           gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/cce1264b5fb49787611ea6a2da3a1d2f/raw/389427c7e03eafd039a2e94228bcf5ab732b0617/Binbash.sh"

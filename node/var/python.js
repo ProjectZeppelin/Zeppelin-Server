@@ -1,7 +1,7 @@
 (function () {
   let Data = {
     python: {
-      title: "Python",
+      title: "python",
       data: [{
           title: "Main and normal modules",
           subtitle: "How to use modules in python",
