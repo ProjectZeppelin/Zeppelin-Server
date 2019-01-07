@@ -7,6 +7,7 @@
   const html = require('./html');
   const css = require('./css');
   const cpp = require('./cpp');
+  const bash = require('./bash');
   const python = require('./python');
 
   let Data = {
@@ -28,8 +29,9 @@
     ...javascript.data,
     ...html.data,
     ...css.data,
-    ...cpp.data
-    ...python.data
+    ...cpp.data,
+    ...python.data,
+    ...bash.data
   };
 
 

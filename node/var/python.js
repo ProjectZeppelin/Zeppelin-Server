@@ -1,9 +1,8 @@
 (function () {
   let Data = {
     python: {
-      title: "python",
-      data: [
-        {
+      title: "Python",
+      data: [{
           title: "Main and normal modules",
           subtitle: "How to use modules in python",
           gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/76ed6e23a95813cda71c1e232eb45ee3/raw/5d9dca8435a2c2f201060cbafc87b56d5abf8e4b/Main%2520and%2520normal%2520modules.py"

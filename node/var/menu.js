@@ -10,11 +10,20 @@
       }]
     },
     cpp_menu: {
-      title: "cpp",
+      title: "CPP",
       url: "/language/cpp",
       children: [{
         title: "cpp",
         url: "/language/cpp",
+        children: []
+      }]
+    },
+    bash_menu: {
+      title: "Bash",
+      url: "/language/bash",
+      children: [{
+        title: "cpp",
+        url: "/language/bash",
         children: []
       }]
     },
@@ -37,7 +46,7 @@
       }]
     },*/
     csharp_menu: {
-      title: "csharp",
+      title: "Csharp",
       url: "/language/csharp",
       children: [{
         title: "csharp",
@@ -46,7 +55,7 @@
       }]
     },
     html_menu: {
-      title: "html",
+      title: "HTML",
       url: "/language/html",
       children: [{
         title: "html",
@@ -55,7 +64,7 @@
       }]
     },
     css_menu: {
-      title: "css",
+      title: "CSS",
       url: "/language/css",
       children: [{
         title: "css",

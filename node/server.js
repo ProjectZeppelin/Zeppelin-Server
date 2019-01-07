@@ -44,8 +44,10 @@ function saveDataFirstTime() {
   //let menu4 = new Menu(env.data.mysql_menu);
   let menu5 = new Menu(env.data.html_menu);
   let menu6 = new Menu(env.data.css_menu);
-  let menu8 = new Menu(env.data.cpp_menu);
   let menu7 = new Menu(env.data.python_menu);
+  let menu8 = new Menu(env.data.cpp_menu);
+  let menu9 = new Menu(env.data.bash_menu);
+
 
 
   db.saveUnique('menu', menu1, {
@@ -76,6 +78,10 @@ function saveDataFirstTime() {
   });
   db.saveUnique('menu', menu7, {
     title: menu7.title
+  });
+
+  db.saveUnique('menu', menu9, {
+    title: menu9.title
   });
 
 
@@ -111,5 +117,10 @@ function saveDataFirstTime() {
   let python = new Language(env.data.python);
   db.saveUnique('languages', python, {
     title: python.title
+  });
+
+  let bash = new Language(env.data.bash);
+  db.saveUnique('languages', bash, {
+    title: bash.title
   });
 }
