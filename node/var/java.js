@@ -28,7 +28,7 @@
           gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/8f5ae7432065bc7a9e5dc0ec84d192b9/raw/f57311f45f11d5cb314b943b850f1da969bac164/If.java"
         },
         {
-          title: "Tenary operator",
+          title: "Ternary operator",
           subtitle: "This operator is a short hand notation of an if statement",
           gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/c2f3fb50c455667bb44c56f698d0a40f/raw/04a4f137d20d8b307cd4b022483646423916e15e/Tenary%2520operator.java"
         },
@@ -51,6 +51,26 @@
           title: "Method return types",
           subtitle: "What we can return from Methods",
           gist: "https://aplearning.xyz/zeppelin/snippets/?snippet=F0xedb/a603dddefee033893b22b7f0960f3790/raw/122eb43575ac01a5d82d7d09be30b7d94b2e7b87/Method%2520return%2520types.java"
+        },
+        {
+          title: "Class",
+          subtitle: "A class is a blueprint of an object",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/5f26123a45ffae8d527c4a2d3f74643b/raw/b4862467abbb3aec98f091462d30ec08f724e401/Class.java"
+        },
+        {
+          title: "Inheritance",
+          subtitle: "Extend the current functionality of a class by creating a subclass",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/9ecbc8ff42127550ada10cf1c322d093/raw/9a09586039f2f24eae3d9ad9f736546a04939e08/inheritance.java"
+        },
+        {
+          title: "Abstract class",
+          subtitle: "An abstract class is a class that you cannot make an object of. In other words you need to instantiate a subclass.",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/6c2f866d1ea9fa9601a317d4665af21f/raw/da9b94d9c8f64bf57e579f43f883c354fcfd4555/AbstractClass.java"
+        },
+        {
+          title: "Interface",
+          subtitle: "A common set of methods that different type of classes can use",
+          gist: "https://aplearning.xyz/zeppelin/snippets/?F0xedb/e33ccf656e25698a17da89ac2bb0a7a7/raw/ca175a97c645d9bc4af85cba1c543df32aaea560/Interface.java"
         },
       ]
     }
