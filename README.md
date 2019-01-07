@@ -3,8 +3,9 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 ![Stage](https://img.shields.io/badge/Stage-Beta-orange.svg)
 ![Version](https://img.shields.io/badge/Version-1.0-green.svg)
-![Required](https://img.shields.io/badge/Requires-NPM-lightgrey.svg)
-![Server](https://img.shields.io/badge/Server-PHP-lightgrey.svg)
+![Required](https://img.shields.io/badge/Requires-Docker-orange.svg)
+![Required](https://img.shields.io/badge/Requires-DockerCompose-orange.svg)
+![Server](https://img.shields.io/badge/Server-JS-green.svg)
 # Zeppelin Server
 Server code to server code snippets for the android app
 
