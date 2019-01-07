@@ -7,6 +7,7 @@
   const html = require('./html');
   const css = require('./css');
   const cpp = require('./cpp');
+  const python = require('./python');
 
   let Data = {
     timeout: 5000,
@@ -27,7 +28,8 @@
     ...javascript.data,
     ...html.data,
     ...css.data,
-    ..cpp.data
+    ...cpp.data
+    ...python.data
   };
 
 

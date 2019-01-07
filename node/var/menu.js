@@ -63,6 +63,15 @@
         children: []
       }]
     },
+    python_menu: {
+      title: "Python",
+      url: "/language/python",
+      children: [{
+        title: "python",
+        url: "/language/python",
+        children: []
+      }]
+    },
   }
 
   module.exports.data = Data;

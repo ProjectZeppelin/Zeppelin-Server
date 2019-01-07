@@ -45,6 +45,8 @@ function saveDataFirstTime() {
   let menu5 = new Menu(env.data.html_menu);
   let menu6 = new Menu(env.data.css_menu);
   let menu8 = new Menu(env.data.cpp_menu);
+  let menu7 = new Menu(env.data.python_menu);
+
 
   db.saveUnique('menu', menu1, {
     title: menu1.title
@@ -72,6 +74,10 @@ function saveDataFirstTime() {
   db.saveUnique('menu', menu8, {
     title: menu8.title
   });
+  db.saveUnique('menu', menu7, {
+    title: menu7.title
+  });
+
 
   let csharp = new Language(env.data.csharp);
   db.saveUnique('languages', csharp, {
@@ -97,9 +103,13 @@ function saveDataFirstTime() {
   db.saveUnique('languages', css, {
     title: css.title
   });
-
   let cpp = new Language(env.data.cpp);
   db.saveUnique('languages', cpp, {
     title: cpp.title
+  });
+
+  let python = new Language(env.data.python);
+  db.saveUnique('languages', python, {
+    title: python.title
   });
 }
